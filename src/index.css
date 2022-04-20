@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* Lisätään tyylimäärittely  */
+div p {
+  border: 1px solid blue;
+  border-radius: 10px;
+  padding: 10px;
+}
+.green {
+  color: green;
+}
+.blue {
+  color: blue;
+}
