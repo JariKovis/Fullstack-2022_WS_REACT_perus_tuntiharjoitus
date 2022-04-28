@@ -42,13 +42,14 @@ const App = () => (
   </div>
 );
 
-/* Luodaan uusi Hello komponentti, jota kutsutaan edellä olevasta App komponentista */
+/* Luodaan Hello komponentti, jota kutsutaan edellä olevasta App komponentista */
 const Hello = () => (
   <div>
     <p>Hei Maailma!</p>
   </div>
 );
 
+/* Luodaan CustomHello komponentti, jota myös kutsutaan edellä olevasta App komponentista ja jonka kutsussa tulee mukana propsit - vrt funktion kutsuparametrit*/
 const CustomHello = (props) => {
   return (
     <div>
@@ -59,20 +60,16 @@ const CustomHello = (props) => {
   );
 };
 
+/* Luodaan muuttuja user, jota käytetään REACT  Elementti */
 const user = {
   firstName: 'Night',
   lastName: 'wish',
-  avatarUrl: 'https://global-uploads.webflow.com/5e5a76c9c9fe8458a78d93eb/61b101f9faea13371d108eb4_promo_group%20copysmall-p-500.png',
+  avatarUrl: 'https://www.rumba.fi/wp-content/uploads/2022/04/nightwish_2022_blomqvist_2298.jpg.webp',
   linkki: "https://www.nightwish.com/"
 };
 
-/* const elementti = (
-  <div>
-    <h2>{user.firstName}   {user.lastName}</h2>
-    <a href={user.linkki}><img src={user.avatarUrl} alt="Kuvalinkki rikki..." /></a>
-  </div>
-) */
 
+/* Luodaan Elementti komponentti, jota kutsutaan App komponentista. Komponentti käyttää edellä määriteltyä user-muuttujaa*/
 const Elementti = () => {
   return (
     <div>
